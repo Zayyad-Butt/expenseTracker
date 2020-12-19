@@ -1,4 +1,12 @@
-// eslint-disable-next-line import/no-anonymous-default-export
+"import/no-anonymous-default-export": ["error", {
+  "allowArray": false,
+  "allowArrowFunction": false,
+  "allowAnonymousClass": false,
+  "allowAnonymousFunction": false,
+  "allowCallExpression": true, // The true value here is for backward compatibility
+  "allowLiteral": false,
+  "allowObject": false
+}]
 export default (state,action)=>{
     switch(action.type){
         case 'DELETE_TRANSACTION':
