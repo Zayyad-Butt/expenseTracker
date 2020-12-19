@@ -35,7 +35,6 @@ export const Transaction = ({transaction}) =>{
         color: "white"
     }
     const sign = transaction.amount>0?'+':'-';
-    const transactionType=transaction.amount>0? 'plus' : 'minus';
     const {delTransaction}=useContext(GlobalContext);
 
     if (sign==='+'){
